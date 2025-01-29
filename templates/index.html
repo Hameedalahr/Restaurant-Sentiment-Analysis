@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Sentiment Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/script.js"></script>
+    
+</head>
+<body>
+    <div class="whole">
+        <div class="sidebox">
+            Restaurant Reviews
+        </div>
+        <div class="container">
+            <h1>Restaurant Sentiment Analysis</h1>
+            <div class="form-container">
+                <h3 class="name">Enter your name</h3>
+                <input class="namebox" type="text" id="name" placeholder="Your Name">
+                <h3 class="feedback">Give Your Feedback</h3>
+                <textarea class="reviewbox" id="review" placeholder="Write your review"></textarea>
+                <button onclick="submitReview()">Submit</button>
+            </div>
+            <h2 id="rating">⭐ 0 / 5</h2>
+        </div>
+    </div>
+    <div class="reviewcontainer" id="reviews-container">
+        <h2>Reviews</h2>
+        <div class="review-grid" id="review-grid">
+            <!-- Reviews will be dynamically added here -->
+        </div>
+    </div>
+    
+</body>
+</html>
